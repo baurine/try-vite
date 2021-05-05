@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
@@ -59,12 +60,11 @@ export default function Home() {
                           {item.name}
                         </a>
                       ))}
-                      <a
-                        href="#"
-                        className="font-medium text-indigo-600 hover:text-indigo-500"
-                      >
-                        Log in
-                      </a>
+                      <Link to="/login">
+                        <span className="font-medium text-indigo-600 hover:text-indigo-500">
+                          Log in
+                        </span>
+                      </Link>
                     </div>
                   </nav>
                 </div>
@@ -111,12 +111,11 @@ export default function Home() {
                           </a>
                         ))}
                       </div>
-                      <a
-                        href="#"
-                        className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                      >
-                        Log in
-                      </a>
+                      <Link to="/login">
+                        <span className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+                          Log in
+                        </span>
+                      </Link>
                     </div>
                   </Popover.Panel>
                 </Transition>
