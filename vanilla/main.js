@@ -1,5 +1,5 @@
 import { nowTime } from './util.js'
 
-export function sayHello() {
-  window.alert(`hello, now the time is ${nowTime()}`)
+export function sayHello(name) {
+  window.alert(`hello ${name || 'bro'}, now the time is ${nowTime()}`)
 }
