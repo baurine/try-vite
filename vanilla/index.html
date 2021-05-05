@@ -1,0 +1,19 @@
+<h1>hello</h1>
+<div>
+  <input id="txt_name" type="text" placeholder="your name" />
+  <button id="btn_hello">hello</button>
+</div>
+<img src="./assets/vite-logo.svg" class="vite_logo" />
+
+<link href="./style.css" rel="stylesheet" />
+
+<script type="module">
+  import { sayHello } from './main.js'
+  // import './style.css' // doesn't work, only can import js content
+
+  const btn = document.getElementById('btn_hello')
+  btn.onclick = function () {
+    const name = document.getElementById('txt_name').value
+    sayHello(name)
+  }
+</script>
