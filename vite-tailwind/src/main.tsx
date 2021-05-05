@@ -10,3 +10,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
+
+/////////////
+import { min } from 'lodash'
+
+const arr = [5, 4, 2, 8]
+console.log(`${arr} min is ${min(arr)}`)
