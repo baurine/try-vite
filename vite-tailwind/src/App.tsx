@@ -4,6 +4,8 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
 
+import 'antd/dist/antd.less'
+
 function App() {
   return (
     <Router>
