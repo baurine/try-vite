@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import AntdPage from './pages/AntdPage'
 
-import 'antd/dist/antd.less'
+// import 'antd/dist/antd.less'
 
 function App() {
   return (
